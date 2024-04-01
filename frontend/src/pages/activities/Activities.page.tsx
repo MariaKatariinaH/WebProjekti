@@ -21,20 +21,26 @@ const Activities = () => {
         setLoading(false);
       })
       .catch((error) => {
-        alert("Error");
+        alert("Error fetching activities");
         console.log(error);
         setLoading(false);
       });
   }, []);
 
-  console.log(activities);
+  const handleDelete = (id: string) => {
+    redirect(`/activities/delete/${id}`);
+  };
+
+  const handleUpdate = (id: string) => {
+    redirect(`/activities/update/${id}`);
+  };
 
   return (
     <div className="content activities">
       <div className="heading">
         <h2>Activities</h2>
         <Button variant="outlined" onClick={() => redirect("/activities/add")}>
-          <Add />
+          <Add /> Add Activity
         </Button>
       </div>
       {loading ? (
@@ -42,7 +48,11 @@ const Activities = () => {
       ) : activities.length === 0 ? (
         <h1>No Activity</h1>
       ) : (
-        <ActivitiesGrid data={activities} />
+        <ActivitiesGrid 
+          data={activities} 
+          onEdit={handleUpdate} 
+          onDelete={handleDelete} 
+        />
       )}
     </div>
   );
