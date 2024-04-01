@@ -3,6 +3,8 @@ import { ThemeContext } from "./context/theme.context";
 import Navbar from "./components/navbar/Navbar.component";
 import { Routes, Route } from "react-router-dom";
 import CustomLinearProgress from "./components/custom-linear-progress/CustomLinearProgress.component";
+import UpdateActivity from "./pages/activities/UpdateActivity.page";
+import DeleteActivity from "./pages/activities/DeleteActivity.page";
 
 //Let's try importing with lazy loading:
 const Home = lazy(() => import("./pages/home/Home.page"));
@@ -24,6 +26,8 @@ const App = () => {
             <Route path="/activities">
               <Route index element={<Activities />} />
               <Route path="add" element={<AddActivity />} />
+              <Route path="update/:id" element={<UpdateActivity />} />
+              <Route path="delete/:id" element={<DeleteActivity />} />
             </Route>
           </Routes>
         </Suspense>
