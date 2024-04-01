@@ -19,10 +19,10 @@ const DeleteActivity = () => {
         redirect("/activities");
       }
     };
-
     handleDelete();
   }, [id, redirect]);
 
+  //Window for confirming is enough:
   return null;
 };
 
