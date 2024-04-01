@@ -37,7 +37,7 @@ const UpdateActivity = () => {
 
   const fetchActivityById = async (id: string) => {
     try {
-      const response = await httpModule.get<IActivity>(`/Activity/Get/${id}`);
+      const response = await httpModule.get<IActivity>(`http://localhost:5004/api/Activity/Get/${id}`);
       setActivity(response.data);
     } catch (error) {
       console.log(error);
@@ -46,7 +46,7 @@ const UpdateActivity = () => {
 
   const handleClickSaveBtn = () => {
     httpModule
-      .put(`/Activity/Update/${id}`, activity)
+      .put(`http://localhost:5004/api/Activity/Update/${id}`, activity)
       .then((response) => redirect("/activities"))
       .catch((error) => console.log(error));
   };

@@ -15,7 +15,7 @@ const Activities = () => {
   useEffect(() => {
     setLoading(true);
     httpModule
-      .get<IActivity[]>("/Activity/Get")
+      .get<IActivity[]>("http://localhost:5004/api/Activity/Get")
       .then((response) => {
         setActivities(response.data);
         setLoading(false);
