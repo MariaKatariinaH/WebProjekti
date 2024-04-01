@@ -136,3 +136,4 @@ C:\WebSovellukset\Loppuprojekti\backend\obj\Debug\net8.0\backend.genruntimeconfi
 C:\WebSovellukset\Loppuprojekti\backend\obj\Debug\net8.0\ref\backend.dll
 C:\WebSovellukset\Loppuprojekti\backend\bin\Debug\net8.0\AutoMapper.dll
 C:\WebSovellukset\Loppuprojekti\backend\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\WebSovellukset\Loppuprojekti\backend\obj\Debug\net8.0\backend.sourcelink.json
