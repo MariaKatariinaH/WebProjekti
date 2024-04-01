@@ -12,7 +12,7 @@ const DeleteActivity = () => {
     const handleDelete = () => {
       if (window.confirm("Are you sure you want to delete this activity?")) {
         httpModule
-          .delete(`/Activity/Delete/${id}`)
+          .delete(`http://localhost:5004/api/Activity/Delete/${id}`)
           .then((response) => redirect("/activities"))
           .catch((error) => console.log(error));
       } else {
