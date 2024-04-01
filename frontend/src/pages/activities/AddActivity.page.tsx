@@ -38,7 +38,7 @@ const AddActivity = () => {
       return;
     }
     httpModule
-      .post("/Activity/Create", activity)
+      .post("http://localhost:5004/api/Activity/Create", activity)
       .then((response) => redirect("/activities"))
       .catch((error) => console.log(error));
   };
