@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
-import "./activities.scss";
+import "./mytasks.scss";
 import httpModule from "../../helpers/http.module";
-import { IActivity } from "../../types/global.typing";
+import { IMyTask } from "../../types/global.typing";
 import { Button, CircularProgress } from "@mui/material";
 import { Add } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import ActivitiesGrid from "../../components/activities/ActivitiesGrid.component";
+import MyTasksGrid from "../../components/mytasks/MyTasksGrid.component";
 
-const Activities = () => {
-  const [activities, setActivities] = useState<IActivity[]>([]);
+const MyTasks = () => {
+  const [mytasks, setMyTasks] = useState<IMyTask[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const redirect = useNavigate();
 
   useEffect(() => {
     setLoading(true);
     httpModule
-      .get<IActivity[]>("/Activity/Get")
+      .get<IMyTask[]>("http://localhost:5004/api/MyTask/Get")
       .then((response) => {
-        setActivities(response.data);
+        setMyTasks(response.data);
         setLoading(false);
       })
       .catch((error) => {
@@ -28,34 +28,34 @@ const Activities = () => {
   }, []);
 
   const handleDelete = (id: string) => {
-    redirect(`/activities/delete/${id}`);
+    redirect(`/mytasks/delete/${id}`);
   };
 
   const handleUpdate = (id: string) => {
-    redirect(`/activities/update/${id}`);
+    redirect(`/mytasks/update/${id}`);
   };
 
   return (
-    <div className="content activities">
+    <div className="content mytasks">
       <div className="heading">
-        <h2>Activities</h2>
-        <Button variant="outlined" onClick={() => redirect("/activities/add")}>
-          <Add /> Add Activity
+        <h2>Tasks</h2>
+        <Button variant="outlined" onClick={() => redirect("/mytasks/add")}>
+          <Add /> Add Task
         </Button>
       </div>
       {loading ? (
         <CircularProgress size={100} />
-      ) : activities.length === 0 ? (
-        <h1>No Activity</h1>
+      ) : mytasks.length === 0 ? (
+        <h1>No Task</h1>
       ) : (
-        <ActivitiesGrid 
-          data={activities} 
-          onEdit={handleUpdate} 
-          onDelete={handleDelete} 
+        <MyTasksGrid
+          data={mytasks}
+          onEdit={handleUpdate}
+          onDelete={handleDelete}
         />
       )}
     </div>
   );
 };
 
-export default Activities;
+export default MyTasks;
