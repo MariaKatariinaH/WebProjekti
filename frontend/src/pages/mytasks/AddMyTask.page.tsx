@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./mytasks.scss";
-import { IActivity, ICreateActivityDto, ICreateMyTaskDto } from "../../types/global.typing";
+import { IActivity, ICreateMyTaskDto } from "../../types/global.typing";
 
 import {
   FormControl,
@@ -60,9 +60,7 @@ const AddMyTask = () => {
       return;
       
     }
-
     
-    console.log("Data", mytask);
     httpModule
       .post("http://localhost:5004/api/MyTask/Create", mytask)
       .then((response) => redirect("/mytasks"))
