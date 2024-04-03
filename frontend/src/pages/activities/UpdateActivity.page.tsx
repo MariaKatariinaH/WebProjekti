@@ -23,7 +23,7 @@ const UpdateActivity = () => {
     tag: "",
     tagTheme: "",
     createdAt: "",
-    updatedAt: "",
+    updatedAt: "",        
   });
 
   const { id } = useParams<{ id?: string }>();
