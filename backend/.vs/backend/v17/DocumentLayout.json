@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\dtos\\mytask\\mytaskcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\dtos\\mytask\\mytaskcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\entities\\mytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\entities\\mytask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\controllers\\mytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:controllers\\mytaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -14,28 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "Core\\Entities\\BaseEntity.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA1wAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:39:36.533Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "MyTask.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\MyTask.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\MyTask.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\MyTask.cs",
+              "RelativeToolTip": "Core\\Entities\\MyTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:39:22.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyTaskCreateDto.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
+              "RelativeDocumentMoniker": "Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
+              "RelativeToolTip": "Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA7wBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:39:02.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyTaskController.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Controllers\\MyTaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MyTaskController.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Controllers\\MyTaskController.cs",
+              "RelativeToolTip": "Controllers\\MyTaskController.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAA4wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:38:47.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "backend.csproj",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend.csproj",
               "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
               "RelativeToolTip": "backend.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-01T12:08:25.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-01T12:08:25.892Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
