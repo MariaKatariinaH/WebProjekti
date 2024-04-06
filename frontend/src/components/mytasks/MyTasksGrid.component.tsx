@@ -22,10 +22,32 @@ const columns: GridColDef[] = [
     width: 100,
     renderCell: (params) => moment(params.row.endDate).format("DD-MM-YYYY"),
   },
-  { field: "status", headerName: "Status", width: 100 },
-  { field: "statusTheme", headerName: "Status Theme", width: 100 },
-  { field: "tag", headerName: "Tag", width: 100 },
-  { field: "tagTheme", headerName: "Theme", width: 100 },
+  {
+    field: "status",
+    headerName: "Status",
+    width: 100,
+    cellClassName: (params) => `status-${params.row.statusTheme.toLowerCase()}`,
+  },
+  //{
+  //  field: "statusTheme",
+  //  headerName: "Status Theme",
+  //  width: 100,
+  //  renderCell: (params) => (
+  //    <div
+  //      className={`status-${params.row.statusTheme.toLowerCase()}`}
+  //      style={{ backgroundColor: params.row.statusTheme.toLowerCase() }}
+  //    >
+  //      {params.row.statusTheme}
+  //    </div>
+  //  )
+  //},
+  {
+    field: "tag",
+    headerName: "#tag",
+    width: 100,
+    cellClassName: (params) => `tag-${params.row.tagTheme.toLowerCase()}`,
+  },
+
   { field: "activityName", headerName: "Activity", width: 100 },
   {
     field: "actions",

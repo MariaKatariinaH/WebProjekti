@@ -40,7 +40,7 @@ namespace backend.Controllers
         [Route("Get")]
         public async Task<ActionResult<IEnumerable<MyTaskGetDto>>> GetMyTasks()
         {
-            var mytasks = await _context.MyTasks.Include(mytask => mytask.Activity).ToListAsync();
+            var mytasks = await _context.MyTasks.Include(mytask => mytask.Activity).OrderByDescending(q => q.StartDate).ToListAsync();
             var convertedMyTasks = _mapper.Map<IEnumerable<MyTaskGetDto>>(mytasks);
 
             return Ok(convertedMyTasks);
