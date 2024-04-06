@@ -29,7 +29,7 @@ const AddMyTask = () => {
 
   const redirect = useNavigate();
 
-  //Get list of activities:
+  //Get list of activities for selecting:
   useEffect(() => {
     httpModule
       .get<IActivity[]>("http://localhost:5004/api/Activity/Get")
@@ -41,8 +41,6 @@ const AddMyTask = () => {
         console.log(error);
       });
   }, []);
-
-  
 
   const handleClickSaveBtn = () => {
     if (
@@ -58,14 +56,14 @@ const AddMyTask = () => {
     ) {
       alert("Fill all fields");
       return;
-      
     }
-    
+
     httpModule
       .post("http://localhost:5004/api/MyTask/Create", mytask)
       .then((response) => redirect("/mytasks"))
       .catch((error) => console.log(error));
   };
+
   const handleClickBackBtn = () => {
     redirect("/mytasks");
   };
