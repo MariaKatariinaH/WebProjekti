@@ -19,6 +19,13 @@ const DeleteActivity = lazy(
 );
 const MyTasks = lazy(() => import("./pages/mytasks/MyTasks.page"));
 const AddMyTask = lazy(() => import("./pages/mytasks/AddMyTask.page"));
+const UpdateMyTask = lazy(
+  () => import("./pages/mytasks/UpdateMyTask.page")
+);
+const DeleteMyTask = lazy(
+  () => import("./pages/mytasks/DeleteMyTask.page")
+);
+
 
 const App = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -41,7 +48,8 @@ const App = () => {
             <Route path="/mytasks">
               <Route index element={<MyTasks />} />
               <Route path="add" element={<AddMyTask />} />
-
+              <Route path="update/:id" element={<UpdateMyTask />} />
+              <Route path="delete/:id" element={<DeleteMyTask />} />
             </Route>
           </Routes>
         </Suspense>

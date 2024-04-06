@@ -30,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Core\\Entities\\BaseEntity.cs",
               "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\BaseEntity.cs",
               "RelativeToolTip": "Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wAsAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T15:39:36.533Z",
               "EditorCaption": ""
@@ -96,10 +100,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-04-01T12:08:25.892Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
