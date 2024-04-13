@@ -1,34 +1,44 @@
+import "./activities-grid.scss";
 import { Box } from "@mui/material";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
+import { GridColDef } from "@mui/x-data-grid/models";
 import moment from "moment";
 import React from "react";
 import { IActivity } from "../../types/global.typing";
 import { IconButton } from "@mui/material";
 import { Edit, Delete } from "@mui/icons-material";
 
-const columns: GridColDef[] = [
-  { field: "id", headerName: "ID", width: 50 },
-  { field: "name", headerName: "Name", width: 100 },
-  { field: "description", headerName: "Description", width: 300 },
-  { field: "activityType", headerName: "Type", width: 100 },
-  { field: "status", headerName: "Status", width: 100 },
-  { field: "statusTheme", headerName: "Theme", width: 100 },
-  { field: "tag", headerName: "Tag", width: 100 },
-  { field: "tagTheme", headerName: "Theme", width: 100 },
+const columns: GridColDef[]  = [
+  { field: "id", headerClassName: "super-app-theme--header", headerName: "ID", width: 50 },
+  { field: "name", headerClassName: "super-app-theme--header", headerName: "Name", width: 100 },
+  { field: "description", headerClassName: "super-app-theme--header", headerName: "Description", width: 300 },
+  { field: "activityType", headerClassName: "super-app-theme--header", headerName: "Type", width: 100 },
   {
-    field: "createdAt",
+    field: "status", headerClassName: "super-app-theme--header",
+    headerName: "Status",
+    width: 100,
+    cellClassName: (params) => `status-${params.row.statusTheme.toLowerCase()}`,
+  },
+  {
+    field: "tag", headerClassName: "super-app-theme--header",
+    headerName: "Tag",
+    width: 100,
+    cellClassName: (params) => `tag-${params.row.tagTheme.toLowerCase()}`,
+  },
+  {
+    field: "createdAt", headerClassName: "super-app-theme--header",
     headerName: "Creation Time",
     width: 150,
     renderCell: (params) => moment(params.row.createdAt).format("DD-MM-YYYY"),
   },
   {
-    field: "updatedAt",
+    field: "updatedAt", headerClassName: "super-app-theme--header",
     headerName: "Time of Updating",
     width: 150,
     renderCell: (params) => moment(params.row.updatedAt).format("DD-MM-YYYY"),
   },
   {
-    field: "actions",
+    field: "actions", headerClassName: "super-app-theme--header",
     headerName: "Actions",
     width: 150,
     sortable: false,
@@ -43,6 +53,7 @@ const columns: GridColDef[] = [
       </div>
     ),
   },
+  
 ];
 
 interface IActivitiesGridProps {
@@ -76,5 +87,4 @@ const ActivitiesGrid: React.FC<IActivitiesGridProps> = ({ data, onEdit, onDelete
     </Box>
   );
 };
-
 export default ActivitiesGrid;
