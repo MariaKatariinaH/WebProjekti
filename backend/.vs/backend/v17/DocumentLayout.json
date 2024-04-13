@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\dtos\\activity\\activitycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\dtos\\activity\\activitycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|c:\\websovellukset\\loppuprojekti\\backend\\core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBDC9748-FEE0-4083-A9C6-A5FA59A6A2A6}|backend.csproj|solutionrelative:core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +51,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Status.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Enums\\Status.cs",
+              "RelativeDocumentMoniker": "Core\\Enums\\Status.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Enums\\Status.cs",
+              "RelativeToolTip": "Core\\Enums\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:07:27.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ActivityCreateDto.cs",
+              "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Dtos\\Activity\\ActivityCreateDto.cs",
+              "RelativeDocumentMoniker": "Core\\Dtos\\Activity\\ActivityCreateDto.cs",
+              "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Dtos\\Activity\\ActivityCreateDto.cs",
+              "RelativeToolTip": "Core\\Dtos\\Activity\\ActivityCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:07:21.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\BaseEntity.cs",
               "ToolTip": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\BaseEntity.cs",
               "RelativeToolTip": "Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T15:39:36.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MyTask.cs",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Entities\\MyTask.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\MyTask.cs",
@@ -67,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MyTaskCreateDto.cs",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
               "RelativeDocumentMoniker": "Core\\Dtos\\MyTask\\MyTaskCreateDto.cs",
@@ -79,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MyTaskController.cs",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\Controllers\\MyTaskController.cs",
               "RelativeDocumentMoniker": "Controllers\\MyTaskController.cs",
@@ -91,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "backend.csproj",
               "DocumentMoniker": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
               "RelativeDocumentMoniker": "backend.csproj",
