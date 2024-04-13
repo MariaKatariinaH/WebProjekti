@@ -1,6 +1,13 @@
 .mytasks-grid {
   * {
     color: var(--text-color1);
+
+    .super-app-theme--header {
+      background-color: var(--bg-color);
+    }
+
+    .MuiDataGrid-filler {
+      background-color: var(--bg-color);
+    }
   }
-  
 }
