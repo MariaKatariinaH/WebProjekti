@@ -54,8 +54,7 @@ const Statistics = () => {
 
   return (
     <div className='content statistics'> 
-      <h3>Your situation</h3>
-      <br />
+      
       <br />
       <span>
           Be proud of your progress.
@@ -65,7 +64,7 @@ const Statistics = () => {
       <ChartContainer
         width={500}
         height={300}
-        series={[{ data: uData, label: 'Count', type: 'bar' }]}
+        series={[{ data: uData, label: 'Count', type: 'bar', color: '#0ea4df' }]}
         xAxis={[{ scaleType: 'band', data: xLabels }]}
       >
         <BarPlot />
