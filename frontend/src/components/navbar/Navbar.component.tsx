@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="brand">
-        <span>Activieties Manager</span>
+        <span>Activieties & Tasks Manager</span>
       </div>
       <div className={menuStyles}>
         <ul>
