@@ -45,7 +45,7 @@ const TasksInProgress = () => {
 
   return (
     <div className="content">
-      <span>Your tasks at hand</span>
+      <span>Your tasks at the moment</span>
       <BarChart         
         width={500}
         height={300}
