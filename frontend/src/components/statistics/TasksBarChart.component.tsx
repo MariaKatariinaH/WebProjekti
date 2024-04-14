@@ -1,39 +1,39 @@
 import "./statistics-chart.scss";
 import { useState, useEffect } from "react";
 import { BarChart } from "@mui/x-charts";
-import { IActivity } from "../../types/global.typing";
+import { IMyTask } from "../../types/global.typing";
 
-const Statistics = () => {
-  const [activities, setActivities] = useState<IActivity[]>([]);
+const StatisticsTasks = () => {
+  const [mytasks, setMyTasks] = useState<IMyTask[]>([]);
   const [loading, setLoading] = useState(true);
   const [error] = useState(null);
 
   useEffect(() => {
-    const fetchActivities = async () => {
-      const response = await fetch("http://localhost:5004/api/Activity/Get");
+    const fetchMyTasks = async () => {
+      const response = await fetch("http://localhost:5004/api/MyTask/Get");
       const data = await response.json();
-      setActivities(data);
+      setMyTasks(data);
       setLoading(false);
     };
-    fetchActivities();
+    fetchMyTasks();
   }, []);
 
-  const groupActivitiesByStatus = (activities: IActivity[]) => {
+  const groupMyTasksByStatus = (mytasks: IMyTask[]) => {
     const statusCounts: { [key: string]: number } = {
       new: 0,
       inprogress: 0,
       done: 0,
       notdoingit: 0,
     };
-    activities.forEach((activity) => {
-      if (activity.status) {
-        statusCounts[activity.status.toLowerCase()] += 1;
+    mytasks.forEach((mytask) => {
+      if (mytask.status) {
+        statusCounts[mytask.status.toLowerCase()] += 1;
       }
     });
     return statusCounts;
   };
 
-  const statusCounts = groupActivitiesByStatus(activities);
+  const statusCounts = groupMyTasksByStatus(mytasks);
 
   const uData = [
     statusCounts.new,
@@ -50,11 +50,11 @@ const Statistics = () => {
   return (
     <div className="content">
       <span>Be proud of your progress.</span>
-      <BarChart        
+      <BarChart         
         width={500}
         height={300}
         series={[
-          { data: uData, label: "Count", type: "bar", color: "#0ea4df" },
+          { data: uData, label: "Count", type: "bar", color: "#8b008b" },
         ]}
         xAxis={[{ scaleType: "band", data: xLabels }]}
       ></BarChart>
@@ -62,4 +62,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics;
+export default StatisticsTasks;
