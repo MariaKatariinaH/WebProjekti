@@ -115,7 +115,7 @@ const MyTasksGrid: React.FC<IMyTasksGridProps> = ({
       }}
       className="mytasks-grid"
     >
-      <DataGrid
+      <DataGrid 
         rows={data.map((row) => ({
           ...row,
           handleUpdate,
@@ -124,6 +124,12 @@ const MyTasksGrid: React.FC<IMyTasksGridProps> = ({
         columns={columns}
         getRowId={(row) => row.id}
         rowHeight={50}
+        initialState={{
+          pagination: {
+            paginationModel: { pageSize: 5, page: 0 },
+          },
+        }}
+        pageSizeOptions={[5, 10, 25]}
       />
     </Box>
   );

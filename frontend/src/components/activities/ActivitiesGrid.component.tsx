@@ -83,6 +83,12 @@ const ActivitiesGrid: React.FC<IActivitiesGridProps> = ({ data, onEdit, onDelete
         columns={columns}
         getRowId={(row) => row.id}
         rowHeight={50}
+        initialState={{
+          pagination: {
+            paginationModel: { pageSize: 5, page: 0 },
+          },
+        }}
+        pageSizeOptions={[5, 10, 25]}
       />
     </Box>
   );
