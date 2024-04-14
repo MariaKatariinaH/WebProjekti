@@ -22,6 +22,7 @@ const DoneThisWeek = () => {
     fetchMyTasks();
   }, []);
 
+  //Maybe get the week number?
   const getWeekNumber = (d: Date): number => {
     const oneJan = new Date(d.getFullYear(), 0, 1);
     const numberOfDays = Math.floor((d.getTime() - oneJan.getTime()) / (24 * 60 * 60 * 1000));
