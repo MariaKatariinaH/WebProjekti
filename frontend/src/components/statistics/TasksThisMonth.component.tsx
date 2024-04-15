@@ -40,7 +40,7 @@ const TasksThisMonth = () => {
   };
 
   const mytasksThisMonth = getMyTasksThisMonth(mytasks);
-  
+
   const groupMyTasksByStatus = (mytasks: IMyTask[]) => {
     let doneCount = 0;
 
@@ -54,7 +54,7 @@ const TasksThisMonth = () => {
   };
 
   const statusCounts = groupMyTasksByStatus(mytasksThisMonth);
-  
+
   const uData = [statusCounts.done];
 
   const xLabels = ["Done"];

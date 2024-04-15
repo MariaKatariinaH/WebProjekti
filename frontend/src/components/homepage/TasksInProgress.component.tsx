@@ -34,9 +34,7 @@ const TasksInProgress = () => {
 
   const statusCounts = groupMyTasksByStatus(mytasks);
 
-  const uData = [
-    statusCounts.inprogress,
-  ];
+  const uData = [statusCounts.inprogress];
 
   const xLabels = ["In Progress"];
 
@@ -46,7 +44,7 @@ const TasksInProgress = () => {
   return (
     <div className="content">
       <span>Your tasks at the moment</span>
-      <BarChart         
+      <BarChart
         width={500}
         height={300}
         series={[

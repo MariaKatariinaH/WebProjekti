@@ -8,52 +8,82 @@ import { IActivity } from "../../types/global.typing";
 import { IconButton } from "@mui/material";
 import { Edit, Delete } from "@mui/icons-material";
 
-const columns: GridColDef[]  = [
-  { field: "id", headerClassName: "super-app-theme--header", headerName: "ID", width: 50 },
-  { field: "name", headerClassName: "super-app-theme--header", headerName: "Name", width: 100 },
-  { field: "description", headerClassName: "super-app-theme--header", headerName: "Description", width: 300 },
-  { field: "activityType", headerClassName: "super-app-theme--header", headerName: "Type", width: 100 },
+const columns: GridColDef[] = [
   {
-    field: "status", headerClassName: "super-app-theme--header",
-    headerName: "Status",
+    field: "id",
+    headerClassName: "super-app-theme--header",
+    headerName: "ID",
+    width: 50,
+  },
+  {
+    field: "name",
+    headerClassName: "super-app-theme--header",
+    headerName: "Name",
+    width: 150,
+  },
+  {
+    field: "description",
+    headerClassName: "super-app-theme--header",
+    headerName: "Description",
+    width: 250,
+  },
+  {
+    field: "activityType",
+    headerClassName: "super-app-theme--header",
+    headerName: "Type",
     width: 100,
+  },
+  {
+    field: "status",
+    headerClassName: "super-app-theme--header",
+    headerName: "Status",
+    width: 120,
     cellClassName: (params) => `status-${params.row.statusTheme.toLowerCase()}`,
   },
   {
-    field: "tag", headerClassName: "super-app-theme--header",
+    field: "tag",
+    headerClassName: "super-app-theme--header",
     headerName: "Tag",
-    width: 100,
+    width: 120,
     cellClassName: (params) => `tag-${params.row.tagTheme.toLowerCase()}`,
   },
   {
-    field: "createdAt", headerClassName: "super-app-theme--header",
+    field: "createdAt",
+    headerClassName: "super-app-theme--header",
     headerName: "Creation Time",
-    width: 150,
+    width: 130,
     renderCell: (params) => moment(params.row.createdAt).format("DD-MM-YYYY"),
   },
   {
-    field: "updatedAt", headerClassName: "super-app-theme--header",
-    headerName: "Time of Updating",
-    width: 150,
+    field: "updatedAt",
+    headerClassName: "super-app-theme--header",
+    headerName: "Update Time",
+    width: 130,
     renderCell: (params) => moment(params.row.updatedAt).format("DD-MM-YYYY"),
   },
   {
-    field: "actions", headerClassName: "super-app-theme--header",
+    field: "actions",
+    headerClassName: "super-app-theme--header",
     headerName: "Actions",
     width: 150,
     sortable: false,
     renderCell: (params) => (
       <div>
-        <IconButton color="primary" onClick={() => params.row.handleUpdate(params.row.id)}>
+        <IconButton
+          color="primary"
+          onClick={() => params.row.handleUpdate(params.row.id)}
+        >
           <Edit />
         </IconButton>
-        <IconButton color="secondary" onClick={() => params.row.handleDelete(params.row.id)}>
+        <IconButton
+          color="secondary"
+          onClick={() => params.row.handleDelete(params.row.id)}
+        >
           <Delete />
         </IconButton>
       </div>
     ),
   },
-  
 ];
 
 interface IActivitiesGridProps {
@@ -62,8 +92,11 @@ interface IActivitiesGridProps {
   onDelete: (id: string) => void;
 }
 
-const ActivitiesGrid: React.FC<IActivitiesGridProps> = ({ data, onEdit, onDelete }) => {
-
+const ActivitiesGrid: React.FC<IActivitiesGridProps> = ({
+  data,
+  onEdit,
+  onDelete,
+}) => {
   const handleDelete = (id: string) => {
     onDelete(id);
   };

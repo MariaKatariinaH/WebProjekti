@@ -50,7 +50,7 @@ const StatisticsTasks = () => {
   return (
     <div className="content">
       <span>Be proud of your progress.</span>
-      <BarChart         
+      <BarChart
         width={500}
         height={300}
         series={[
