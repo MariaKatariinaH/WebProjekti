@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj": {}
+    "C:\\Users\\maria\\Desktop\\Loppuprojekti\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj": {
+    "C:\\Users\\maria\\Desktop\\Loppuprojekti\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\Desktop\\Loppuprojekti\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\maria\\Desktop\\Loppuprojekti\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\obj\\",
+        "outputPath": "C:\\Users\\maria\\Desktop\\Loppuprojekti\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
