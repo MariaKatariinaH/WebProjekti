@@ -1,34 +1,28 @@
-import AlertCard from '../../components/homepage/AlertCard.component'
-import DoneThisWeek from '../../components/homepage/DoneThisWeek.component'
-import ReminderCard from '../../components/homepage/ReminderCard.component'
-import TasksInProgress from '../../components/homepage/TasksInProgress.component'
-import './home.scss'
+import AlertCard from "../../components/homepage/AlertCard.component";
+import ReminderCard from "../../components/homepage/ReminderCard.component";
+import TasksInProgress from "../../components/homepage/TasksInProgress.component";
+import "./home.scss";
 
 const Home = () => {
   return (
-    <div className='content home'> 
-    <h3>Welcome To Activities and Tasks Manager</h3>
-    <br />
-   
-    <TasksInProgress />
-    
-    
-    <div>
-      <DoneThisWeek />
-    </div>
-    <div>
-    <h4>Reminders and announcements</h4>
-    </div>
-    <div>
-      <AlertCard />
+    <div className="content home">
+      <h3>Welcome To Activities and Tasks Manager</h3>
+      <span>
+        This was made to help you with your countless activities and tasks.
+      </span>
+      <br />
+      <TasksInProgress />
+      <div>
+        <h4>Reminders and announcements</h4>
       </div>
       <div>
-      <ReminderCard />
+        <AlertCard />
+      </div>
+      <div>
+        <ReminderCard />
+      </div>
     </div>
-    
-    </div>
-    
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

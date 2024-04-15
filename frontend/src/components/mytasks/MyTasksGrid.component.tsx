@@ -18,13 +18,13 @@ const columns: GridColDef[] = [
     field: "name",
     headerClassName: "super-app-theme--header",
     headerName: "Name",
-    width: 100,
+    width: 150,
   },
   {
     field: "content",
     headerClassName: "super-app-theme--header",
     headerName: "Content",
-    width: 300,
+    width: 250,
   },
   {
     field: "startDate",
@@ -44,21 +44,21 @@ const columns: GridColDef[] = [
     field: "status",
     headerClassName: "super-app-theme--header",
     headerName: "Status",
-    width: 100,
+    width: 120,
     cellClassName: (params) => `status-${params.row.statusTheme.toLowerCase()}`,
   },
   {
     field: "tag",
     headerClassName: "super-app-theme--header",
     headerName: "#tag",
-    width: 100,
+    width: 120,
     cellClassName: (params) => `tag-${params.row.tagTheme.toLowerCase()}`,
   },
   {
     field: "activityName",
     headerClassName: "super-app-theme--header",
     headerName: "Activity",
-    width: 100,
+    width: 150,
   },
   {
     field: "actions",
@@ -115,7 +115,7 @@ const MyTasksGrid: React.FC<IMyTasksGridProps> = ({
       }}
       className="mytasks-grid"
     >
-      <DataGrid 
+      <DataGrid
         rows={data.map((row) => ({
           ...row,
           handleUpdate,
