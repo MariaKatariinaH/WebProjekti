@@ -9,3 +9,5 @@ The backend uses ASP.NET Core and was done with Visual Studio 2022. Backend can 
 The frontend was made in Visual Studio Code and it is using React. The frontend starts from Visual Studio Code with commands
 - cd frontend
 - npm start
+
+The database was created using Microsoft SQL Server Management Studio.
