@@ -1,4 +1,5 @@
-##About the project
+##
+About the project
 
 This is a final project for Web-sovellusten kehittäminen -course at spring 2024 in Xamk.
 
