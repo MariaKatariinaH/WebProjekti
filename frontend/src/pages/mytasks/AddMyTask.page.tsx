@@ -42,19 +42,24 @@ const AddMyTask = () => {
       });
   }, []);
 
+  const isDateFormatRight = (dateString: string) => {
+    const regex = /^\d{4}-\d{2}-\d{2}$/;
+    return regex.test(dateString);
+  };
+
   const handleClickSaveBtn = () => {
     if (
       mytask.name === "" ||
       mytask.content === "" ||
-      mytask.startDate === "" ||
-      mytask.endDate === "" ||
+      !isDateFormatRight(mytask.startDate)  ||
+      !isDateFormatRight(mytask.endDate)  ||
       mytask.status === "" ||
       mytask.statusTheme === "" ||
       mytask.tag === "" ||
       mytask.tagTheme === "" ||
       mytask.activityId === ""
     ) {
-      alert("Fill all fields");
+      alert("Fill all fields, check that date format is YYYY-MM-DD");
       return;
     }
 

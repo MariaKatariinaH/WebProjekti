@@ -4588,11 +4588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\maria\\Documents\\GitHub\\WebProjekti\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
+      "projectPath": "C:\\Users\\maria\\Documents\\GitHub\\WebProjekti\\backend\\backend.csproj",
       "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-      "outputPath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\obj\\",
+      "outputPath": "C:\\Users\\maria\\Documents\\GitHub\\WebProjekti\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",

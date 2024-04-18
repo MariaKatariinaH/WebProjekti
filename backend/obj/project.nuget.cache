@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J067Tm4ck6M0cuFzQXE3q3WJpMhfLP80Hq8tmBG98P5skmE6KWnvhFox9eT30VyAz60Xkgj0d9yOlc+n1mDtpg==",
+  "dgSpecHash": "opmRD88BC8/k+ubazhciYzbmjiDTCaOpkWaHiPNWKwRljNuUyv7dYfDQg8zaf8rG396DtOE/oLdhoF30dW3zug==",
   "success": true,
-  "projectFilePath": "C:\\WebSovellukset\\Loppuprojekti\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\maria\\Documents\\GitHub\\WebProjekti\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maria\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
