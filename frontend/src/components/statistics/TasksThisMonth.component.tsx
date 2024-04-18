@@ -66,6 +66,28 @@ const TasksThisMonth = () => {
     <div className="content">
       <span>Be proud of your progress this month.</span>
       <BarChart
+        sx={{
+          // left yAxis label styles
+          "& .MuiChartsAxis-left .MuiChartsAxis-tickLabel": {
+            strokeWidth: "0.4",
+            fill: "#FF0099",
+          },
+          // bottom label styles
+          "& .MuiChartsAxis-bottom .MuiChartsAxis-tickLabel": {
+            strokeWidth: "0.5",
+            fill: "#FF0099",
+          },
+          // Bottom axis line styles
+          "& .MuiChartsAxis-bottom .MuiChartsAxis-line": {
+            stroke: "#FF0099",
+            strokeWidth: 0.4,
+          },
+          // Left axis line styles
+          "& .MuiChartsAxis-left .MuiChartsAxis-line": {
+            stroke: "#FF0099",
+            strokeWidth: 0.4,
+          },
+        }}
         width={500}
         height={300}
         series={[

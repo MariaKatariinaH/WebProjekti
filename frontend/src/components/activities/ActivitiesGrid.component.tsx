@@ -19,13 +19,13 @@ const columns: GridColDef[] = [
     field: "name",
     headerClassName: "super-app-theme--header",
     headerName: "Name",
-    width: 150,
+    width: 130,
   },
   {
     field: "description",
     headerClassName: "super-app-theme--header",
     headerName: "Description",
-    width: 250,
+    width: 230,
   },
   {
     field: "activityType",
